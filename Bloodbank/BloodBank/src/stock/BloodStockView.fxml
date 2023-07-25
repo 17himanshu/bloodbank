@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock.BloodStockViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="43.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="23.0" layoutY="126.0" prefHeight="33.0" prefWidth="35.0" text="O+">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="166.0" prefHeight="33.0" prefWidth="35.0" text="O-">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="422.0" prefHeight="33.0" prefWidth="35.0" text="AB-">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="378.0" prefHeight="33.0" prefWidth="35.0" text="AB+">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="344.0" prefHeight="33.0" prefWidth="35.0" text="B-">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="299.0" prefHeight="33.0" prefWidth="35.0" text="B+">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="250.0" prefHeight="33.0" prefWidth="35.0" text="A-">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="209.0" prefHeight="33.0" prefWidth="35.0" text="A+">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtopos" editable="false" layoutX="107.0" layoutY="130.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtabne" editable="false" layoutX="107.0" layoutY="426.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtabpos" editable="false" layoutX="107.0" layoutY="382.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtbne" editable="false" layoutX="107.0" layoutY="344.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtbpos" editable="false" layoutX="107.0" layoutY="299.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtane" editable="false" layoutX="107.0" layoutY="254.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtapos" editable="false" layoutX="107.0" layoutY="213.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtone" editable="false" layoutX="107.0" layoutY="170.0" style="-fx-border-style: dotted;" />
+      <Label layoutX="183.0" layoutY="71.0" prefHeight="30.0" prefWidth="233.0" text="Blood Units Available" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

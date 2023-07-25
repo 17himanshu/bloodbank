@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="historypanel.HistoryPanelViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2121" height="39.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="229.0" layoutY="69.0" prefHeight="30.0" prefWidth="141.0" text="View History" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="212.0" layoutX="67.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@7014911.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="360.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="341.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@7465425.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="73.0" layoutY="345.0" mnemonicParsing="false" onAction="#doShowCollectionHistory" style="-fx-border-style: solid;" text="Collection History">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="345.0" layoutY="345.0" mnemonicParsing="false" onAction="#doShowIssueHistory" prefHeight="32.0" prefWidth="141.0" style="-fx-border-style: solid;" text="IssueHistory">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

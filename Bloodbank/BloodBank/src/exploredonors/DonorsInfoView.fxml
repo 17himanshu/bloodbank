@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exploredonors.DonorsInfoViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="41.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ComboBox fx:id="combobgroup" layoutX="26.0" layoutY="159.0" prefWidth="150.0" style="-fx-border-style: dotted;" />
+      <Label layoutX="38.0" layoutY="124.0" prefHeight="17.0" prefWidth="96.0" text="Blood Group">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="209.0" layoutY="156.0" mnemonicParsing="false" onAction="#doFetch" style="-fx-border-style: solid;" text="Fetch">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="309.0" layoutY="156.0" mnemonicParsing="false" onAction="#doShowAll" style="-fx-border-style: solid;" text="Show All">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblGrid" layoutX="9.0" layoutY="239.0" prefHeight="200.0" prefWidth="584.0" style="-fx-border-style: solid;" />
+      <Button layoutX="447.0" layoutY="156.0" mnemonicParsing="false" onAction="#doShowinExcel" style="-fx-border-style: solid;" text="Show In Excel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="200.0" layoutY="70.0" prefHeight="30.0" prefWidth="217.0" text="Expore Donors Info" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

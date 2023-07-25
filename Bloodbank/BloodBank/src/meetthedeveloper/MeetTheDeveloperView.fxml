@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" prefHeight="467.0" prefWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meetthedeveloper.MeetTheDeveloperViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="39.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="173.0" layoutY="80.0" prefHeight="30.0" prefWidth="212.0" text="Meet The Developer" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="135.0" fitWidth="111.0" layoutX="480.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhatsApp%20Image%202021-11-24%20at%2010.48.50%20AM.jpeg" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="48.0" layoutY="300.0" prefHeight="135.0" prefWidth="503.0" style="-fx-border-style: solid;" text="I am Himanshu from Dr BR Ambedkar NIT Jalandhar .&#10;&#10;For any queries,suggestions feel free to contact me&#10;&#10;Mobile No : 7009028796   &#10;Email Id : himanshusharmabthinda@gmail.com&#10;&#10;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

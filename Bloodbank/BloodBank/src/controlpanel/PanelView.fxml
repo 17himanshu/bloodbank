@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlpanel.PanelViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2121" height="39.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="222.0" layoutY="50.0" prefHeight="30.0" prefWidth="158.0" text="Control Panel" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="66.0" layoutY="229.0" mnemonicParsing="false" onAction="#doRegister" style="-fx-border-style: solid;" text="Register">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="438.0" layoutY="228.0" mnemonicParsing="false" onAction="#doShowAvailable" prefHeight="25.0" prefWidth="104.0" style="-fx-border-style: solid;" text="Available">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="259.0" layoutY="228.0" mnemonicParsing="false" onAction="#doDonate" style="-fx-border-style: solid;" text="Donation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="404.0" mnemonicParsing="false" onAction="#doIssue" style="-fx-border-style: solid;" text=" Issue Blood">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="404.0" mnemonicParsing="false" onAction="#doShowHistory" style="-fx-border-style: solid;" text="History">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="432.0" layoutY="404.0" mnemonicParsing="false" onAction="#doExploreDonors" prefHeight="32.0" prefWidth="127.0" style="-fx-border-style: solid;" text="Donors Info">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="180.0" layoutY="454.0" mnemonicParsing="false" onAction="#doMeetTheDeveloper" prefHeight="25.0" prefWidth="240.0" style="-fx-border-style: solid;" text="Meet The Developer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutY="435.0" prefHeight="11.0" prefWidth="600.0" />
+      <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="51.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3456426.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="248.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@12_blood_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="438.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@5486267.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="51.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2961948.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="248.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3609926.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="107.0" layoutX="438.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@471012.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="donormaster.DonorMasterViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff211f" height="43.0" stroke="BLACK" strokeType="INSIDE" width="702.0" />
+      <Label layoutX="37.0" layoutY="116.0" prefHeight="26.0" prefWidth="118.0" text="Mobile Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="33.0" layoutY="153.0" prefHeight="25.0" prefWidth="118.0" style="-fx-border-style: dotted;" />
+      <Label layoutX="37.0" layoutY="191.0" prefHeight="26.0" prefWidth="118.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="33.0" layoutY="229.0" prefHeight="25.0" prefWidth="118.0" style="-fx-border-style: dotted;" />
+      <TextField fx:id="txtcity" layoutX="380.0" layoutY="320.0" prefHeight="25.0" prefWidth="148.0" style="-fx-border-style: dotted;" />
+      <Label layoutX="37.0" layoutY="274.0" prefHeight="26.0" prefWidth="118.0" text="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtaddress" layoutX="33.0" layoutY="320.0" prefHeight="25.0" prefWidth="308.0" style="-fx-border-style: dotted;" />
+      <Button layoutX="195.0" layoutY="149.0" mnemonicParsing="false" onAction="#doFind" prefHeight="32.0" prefWidth="61.0" style="-fx-border-style: solid;" text="Find">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="251.0" layoutY="191.0" prefHeight="26.0" prefWidth="95.0" text="Gender">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboGender" layoutX="247.0" layoutY="229.0" prefHeight="25.0" prefWidth="104.0" style="-fx-border-style: dotted;" />
+      <Button layoutX="501.0" layoutY="242.0" mnemonicParsing="false" onAction="#doInsertImage" style="-fx-border-style: solid;" text="Browse">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="385.0" layoutY="280.0" prefHeight="26.0" prefWidth="118.0" text="City/town">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="view" fitHeight="150.0" fitWidth="147.0" layoutX="475.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Insert-Photo-Here.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="368.0" prefHeight="26.0" prefWidth="118.0" text="Blood Group">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="368.0" prefHeight="26.0" prefWidth="118.0" text="Age">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAge" layoutX="232.0" layoutY="407.0" prefHeight="25.0" prefWidth="82.0" style="-fx-border-style: dotted;" />
+      <Label layoutX="395.0" layoutY="368.0" prefHeight="26.0" prefWidth="118.0" text="Disease(if any)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDisease" layoutX="395.0" layoutY="407.0" prefHeight="25.0" prefWidth="148.0" style="-fx-border-style: dotted;" />
+      <ComboBox fx:id="comboBGroup" layoutX="37.0" layoutY="407.0" prefHeight="25.0" prefWidth="109.0" style="-fx-border-style: dotted;" />
+      <Button layoutX="37.0" layoutY="451.0" mnemonicParsing="false" onAction="#doClear" prefHeight="33.0" prefWidth="72.0" style="-fx-border-style: solid;" text="New">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="198.0" layoutY="451.0" mnemonicParsing="false" onAction="#doRegister" prefHeight="33.0" prefWidth="82.0" style="-fx-border-style: solid;" text="Register">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="349.0" layoutY="451.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="33.0" prefWidth="72.0" style="-fx-border-style: solid;" text="Update">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="477.0" layoutY="451.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="33.0" prefWidth="72.0" style="-fx-border-style: solid;" text="Delete">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="190.0" layoutY="63.0" prefHeight="30.0" prefWidth="217.0" text="Donor Registration" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

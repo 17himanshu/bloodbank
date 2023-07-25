@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-color: #FFFBF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unitcollector.UnitCollectionViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff201f" height="41.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="130.0" fitWidth="114.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@12_blood_2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="193.0" prefHeight="33.0" prefWidth="203.0" text="Registered Mobile Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboRmn" editable="true" layoutX="52.0" layoutY="237.0" prefHeight="25.0" prefWidth="174.0" style="-fx-border-style: dotted;" />
+      <Button layoutX="281.0" layoutY="234.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="32.0" prefWidth="79.0" style="-fx-border-style: solid;" text="Search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="60.0" layoutY="303.0" prefHeight="33.0" prefWidth="114.0" text="Blood Group">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbGroup" disable="true" layoutX="42.0" layoutY="344.0" style="-fx-border-style: dotted;" />
+      <Label layoutX="280.0" layoutY="297.0" prefHeight="33.0" prefWidth="135.0" text="Date Of Donation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepckr" layoutX="261.0" layoutY="344.0" style="-fx-border-style: dotted;" />
+      <Separator layoutX="4.0" layoutY="395.0" prefHeight="0.0" prefWidth="592.0" />
+      <Button layoutX="40.0" layoutY="425.0" mnemonicParsing="false" onAction="#doUpload" prefHeight="25.0" prefWidth="197.0" style="-fx-border-style: solid;" text="Upload Data">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="396.0" layoutY="425.0" mnemonicParsing="false" onAction="#doClear" style="-fx-border-style: solid;" text="New">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="viewImg" fitHeight="150.0" fitWidth="135.0" layoutX="450.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="210.0" layoutY="80.0" prefHeight="30.0" prefWidth="231.0" text="Blood Unit Collection" textFill="#eb0e0e" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
