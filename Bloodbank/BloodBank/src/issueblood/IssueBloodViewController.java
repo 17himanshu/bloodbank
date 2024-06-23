@@ -55,37 +55,40 @@ public class IssueBloodViewController
     {
     	String bg=combobGroup.getSelectionModel().getSelectedItem();
     	int number=Integer.parseInt(txtnumber.getText());
-    	try
+
+	try
     	{
-			pst=con.prepareStatement("insert into issued values(?,?,?,?,current_date(),?)");
-			pst.setString(1, txtnname.getText());
-			pst.setString(2, txtmobile.getText());
-			pst.setString(3, txthospital.getText());
-			pst.setString(4, txtreason.getText());
-			pst.setString(5, combobGroup.getSelectionModel().getSelectedItem());
-			pst.executeUpdate();
+            pst=con.prepareStatement("select " + bg + " from total_blood_record");
+            ResultSet rs = pst.executeQuery();
+            rs.next();
+            int availableBlood = rs.getInt(1);
+            if(availableBlood >= number)
+            {
+                pst=con.prepareStatement("update total_blood_record set " + bg + "=" + bg + "-?");
+                pst.setInt(1, number);                                    
+                pst.executeUpdate();
+                showMsg("Updated Total table");
+                
+                pst=con.prepareStatement("insert into issued values(?,?,?,?,current_date(),?)");
+                pst.setString(1, txtnname.getText());
+                pst.setString(2, txtmobile.getText());
+                pst.setString(3, txthospital.getText());
+                pst.setString(4, txtreason.getText());
+                pst.setString(5, combobGroup.getSelectionModel().getSelectedItem());
+                pst.executeUpdate();
+                
+                showMsg("Updated Successfuly.....");
+            }
+            else
+            {
+		    showMsg("Not enough blood available");
+            }
 			
-			showMsg("Updated Successfuly.....");
-		} 
+	} 
     	catch (SQLException e)
     	{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	
-    	try
-    	{
-    		pst=con.prepareStatement("update total_blood_record set "+bg+"="+bg+"-?");
-    		pst.setInt(1, number);                                    
-    		pst.executeUpdate();
-    		showMsg("Updated Total table");
-    	}
-    	catch(SQLException e)
-    	{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
+		e.printStackTrace();
+	}
 
     @FXML
     void initialize() {
