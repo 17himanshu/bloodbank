@@ -17,6 +17,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -83,11 +84,21 @@ public class BloodIssuedViewController {
 
     @FXML
     void doListAll(ActionEvent event) {
-    	
-    	getColumnns();
-    	allRecords=getAllObjects();	
-    	tblgrid.setItems(allRecords);
-    	
+        if (datepckrdoi.getValue() == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setContentText("Please select a date");
+            alert.showAndWait();
+        } else if (combobgroup.getSelectionModel().getSelectedItem() == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setContentText("Please select a blood group");
+            alert.showAndWait();
+        } else {
+            getColumnns();
+            allRecords = getAllObjects();
+            tblgrid.setItems(allRecords);
+        }
     }
 
     @FXML
