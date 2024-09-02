@@ -79,10 +79,10 @@ public class BloodCollectionTblViewController {
 
     @FXML
     void doShowReccent(ActionEvent event) {
-    	getColumnns();
-    	ObservableList<DonationsBean>Records=getSelectedObjects();	
-    	tblgrid.setItems(Records);
-    	jasoos=false;
+        getColumnns();
+        Records = getSelectedObjects();
+        tblgrid.setItems(Records);
+        jasoos=false;
     }
     
     ObservableList<DonationsBean> getAllObjects()
@@ -148,22 +148,26 @@ public class BloodCollectionTblViewController {
    	 }
     
     @FXML
-    void doShowinExcel(ActionEvent event)
-    {
-    	try
-    	{
-    		if(jasoos==true)
-    			writeExcel(allRecords);
-    		else {
-				writeExcel(Records);
-			}
-			System.out.println("Exported to excel..");
-			
-		}
-    	catch (Exception e)
-    	{
-			e.printStackTrace();
-		}
+void doShowinExcel(ActionEvent event) {
+    	try {
+            if (jasoos) {
+                if (allRecords != null && !allRecords.isEmpty()) {
+                    writeExcel(allRecords);
+                    System.out.println("Exported all records to excel..");
+                } else {
+                    System.out.println("No records to export.");
+                }
+            } else {
+                if (Records != null && !Records.isEmpty()) {
+                    writeExcel(Records);
+                    System.out.println("Exported selected records to excel..");
+                } else {
+                    System.out.println("No records to export.");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     
     public void writeExcel( ObservableList<DonationsBean> list) throws Exception {
